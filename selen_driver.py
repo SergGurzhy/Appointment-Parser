@@ -1,6 +1,11 @@
 import time
+
+import undetected_chromedriver
 from selenium import webdriver
-from main import test_1, test_2, test_4, test_3
+
+
+def get_undetected_chromedriver():
+    return undetected_chromedriver.Chrome(version_main=124)
 
 
 def get_chrome_driver():
@@ -23,5 +28,3 @@ def get_chrome_driver():
 
 if __name__ == '__main__':
     driver = get_chrome_driver()
-    driver.get(test_4)
-    time.sleep(100)
