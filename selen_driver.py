@@ -5,7 +5,7 @@ from selenium import webdriver
 
 
 def get_undetected_chromedriver():
-    return undetected_chromedriver.Chrome(version_main=124)
+    return undetected_chromedriver.Chrome()
 
 
 def get_chrome_driver():
